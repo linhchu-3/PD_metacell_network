@@ -165,7 +165,7 @@ Scripts for identifying key regulatory genes and candidate disease drivers.
 
 ## Input Data
 
-The workflow expects preprocessed snRNA-seq datasets generated using the published preprocessing pipeline and derived from the following studies:
+The workflow expects preprocessed snRNA-seq datasets generated using the published preprocessing pipeline and derived from the following studies. The input folder contains the data required to run the pipeline for our discovery cohort. 
 
 | Study              | Citation                                             | GEO Accession |
 | ------------------ | ---------------------------------------------------- | ------------- |
@@ -173,6 +173,7 @@ The workflow expects preprocessed snRNA-seq datasets generated using the publish
 | Lee et al.         | *Science Advances* (2023), PMID: 37058563            | GSE148434     |
 | Martirosyan et al. | *Molecular Neurodegeneration* (2024), PMID: 38245794 | GSE243639     |
 | Ma et al.          | *Nature Communications* (2025), PMID: 40759663       | GSE253462     |
+
 
 ---
 
