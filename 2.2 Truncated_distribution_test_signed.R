@@ -1,13 +1,22 @@
 #library
+library(truncnorm)
+library(ggplot2)
+library(RColorBrewer)
+library(grid)
+library(gridExtra)
 
 #Signed
 #Plot correlation distribution with different cutoff
+# Choose cluster to generate plot
+# example in cluster 1
+cluster_id <- 1 
+input_dir <- paste0("Cluster", cluster_id)
 
 # Loop through different RDS files
 for (cutoff in seq(10, 80, by = 10)) {
   
   # Construct file name
-  rds_file <- paste0("Cluster1/ijw_FDR_1_no_perm_pos_neg_mincell", cutoff, ".rds")
+  rds_file <- file.path(input_dir, paste0("ijw_FDR_1_no_perm_pos_neg_mincell", cutoff, ".rds"))
   
   # Load the RDS file
   ijw_FDR <- readRDS(rds_file)
@@ -92,15 +101,15 @@ for (cutoff in seq(10, 80, by = 10)) {
   plot_list[[as.character(cutoff)]] <- p
 }
 
-main_title <- textGrob("C1 PD+Control All gene pairs Avg no 0 Signed", gp = gpar(fontsize = 10, fontface = "bold"))
+main_title <- textGrob("PD+Control All gene pairs Avg no 0 Signed", gp = gpar(fontsize = 10, fontface = "bold"))
 
 
 # Arrange all plots in a 3x4 grid
-png("Cluster1/PDControl_C1_FDR_1_signed_correlation_density_MSE.png", width=3000,height=2000,res=300)
+png("input_dir/PDControl_FDR_1_signed_correlation_density_MSE.png", width=3000,height=2000,res=300)
 grid.arrange(grobs = plot_list, ncol = 4, nrow = 2, top = main_title)
 dev.off()
 
-saveRDS(MSE_list, file = "Cluster1/C1_PDControl_avg_signed_MSE_list.rds")
-saveRDS(Mean_list, file = "Cluster1/C1_PDControl_avg_signed_Mean_list.rds")
+saveRDS(MSE_list, file = "input_dir/PDControl_avg_signed_MSE_list.rds")
+saveRDS(Mean_list, file = "input_dir/PDControl_avg_signed_Mean_list.rds")
 
 
