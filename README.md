@@ -89,7 +89,7 @@ Infer causal regulatory relationships among genes.
 
 ### 7. Key Driver Analysis
 
-Identify candidate causal regulators and top disease-associated driver genes.
+Identify candidate causal regulators and top disease-associated driver genes, using the method described in here Zhang et al. (Cell, 2013, PMID: 23622250) or can downloaded here: https://github.com/mw201608/mnml-public/blob/master/pkgs/KDA_0.2.2.tar.gz
 
 ---
 
@@ -154,14 +154,6 @@ Generate Bayesian network inference using RIMBANet
 
 ---
 
-### 6. Key Driver Analysis
-
-Scripts for identifying key regulatory genes and candidate disease drivers.
-
-*(Additional documentation to be added.)*
-
----
-
 ## Input Data
 
 The workflow expects preprocessed snRNA-seq datasets generated using the published preprocessing pipeline and derived from the following studies. The input folder contains the data required to run the pipeline for our discovery cohort. 
@@ -180,14 +172,12 @@ The workflow expects preprocessed snRNA-seq datasets generated using the publish
 
 The workflow generates:
 
-* Metacell expression matrices
+* Metacell data
 * Biologically Meaningful Correlation (BMC) matrices
 * MEGENA co-expression networks
 * Pruned network adjacency matrices
 * Bayesian causal networks
-* Cell-type-specific gene modules
-* Candidate key driver genes
-* Prioritized Parkinson's disease regulatory mechanisms
+* Key driver genes
 
 ---
 
