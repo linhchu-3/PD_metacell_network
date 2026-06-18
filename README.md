@@ -152,6 +152,11 @@ Apply iterative pruning procedure to remove genes and nuclei in a data matrix
 
 Generate Bayesian network inference using RIMBANet
 
+### 6. Key Driver Analysis
+#### 6 `KDA.R`
+
+Generate candidate disease drivers
+
 ---
 
 ## Input Data
