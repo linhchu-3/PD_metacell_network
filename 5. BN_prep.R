@@ -1,3 +1,5 @@
+##Step 1: Prepare data for Bayesian network analysis using RIMBANet
+
 #update prior path
 prior_path_new <-  "/TF_target_BN_priors.tsv"
 
@@ -25,7 +27,7 @@ if(!file.exists(outdir)) dir.create(outdir, recursive = TRUE)
 
 write.table(expr_dat_3, file = paste0(outdir, 'data.discretized.txt'), col.names = FALSE, row.names = TRUE, quote = FALSE, sep = "\t")
 
-##Step 2 - update ban files with addition priors
+#pdate ban files with addition priors
 #here I use Transcription factor -> target information downloaded from TFLink database
                                     
 # Add row and colnames to make life easier
@@ -68,3 +70,6 @@ colnames(identity) <- NULL
 
 # And write to file
 write.table(identity, paste0(outdir, "bn.banned.txt"), sep = "\t", row.names = FALSE, col.names = FALSE)
+
+#Step 2: Construct BN Using RIMBANet
+#follow a pipeline here: https://github.com/mw201608/BayesianNetwork                                     
