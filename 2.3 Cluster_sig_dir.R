@@ -10,11 +10,11 @@ args <- commandArgs(trailingOnly = TRUE)
 clusterid <- as.numeric(args[1])
 
 # Construct file paths based on clusterid
-cluster_dir <- paste0("/PD/SnRNAseq/MEGENA_no0_Metacells_corrected/Gamma15_avg_PC10_knn5_n2000_mincell_opt/unweighted/PDControl/Cluster",clusterid)
-markers_file <- paste0("/PD/SnRNAseq/PD_Metacells_corrected/Gamma15_avg_PC10_knn5_n2000/Conserved markers/Unweighted/Cluster", clusterid, "_unweighted_conserved_markers.csv")
+cluster_dir <- paste0("/Cluster",clusterid)
+markers_file <- paste0("/Cluster", clusterid, "_unweighted_conserved_markers.csv")
 
 #load file
-obj <- readRDS("/PD/SnRNAseq/PD_Metacells_corrected/Gamma15_avg_PC10_knn5_n2000/MC_all_clusters_gamma15_avg_PC10_knn5_n2000_unweighted.seurat.RDS")
+obj <- readRDS("/MC_all_clusters_gamma15_avg_PC10_knn5_n2000_unweighted.seurat.RDS")
 
 #set some parameters
 
