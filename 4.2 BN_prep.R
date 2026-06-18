@@ -4,7 +4,7 @@ prior_path_new <-  "/TF_target_BN_priors.tsv"
 #use example cluster 1
 clusterid = 1
 
-filtered_expr_data_list <- readRDS("/Cluster1/filtered_expr_data_list.RDS")
+filtered_expr_data_list <- readRDS(paste0("Cluster", clusterid, "/filtered_expr_data_list.RDS"))
 
 expr_data_filt <- filtered_expr_data_list[["T_g_0.4_T_m_0.4"]]
 
@@ -18,7 +18,8 @@ discretizeK = function(x, k = 3){
 
 expr_dat_3 <- t(apply(expr_dat_new, 1, discretizeK))
 
-#prepare output directory
+#prepare output directory #use Tg = 0.4 and Tm = 0.4
+                                    
 outdir = paste0('Cluster', clusterid, '/BN_Tg_0.4_Tm_0.4/')
 if(!file.exists(outdir)) dir.create(outdir, recursive = TRUE)
 
