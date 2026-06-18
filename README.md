@@ -141,17 +141,16 @@ Submits MEGENA jobs using absolute correlation values sorted by magnitude.
 
 ### 4. Network Pruning and Filtering
 
-Scripts for network pruning and filtering of co-expression edges.
+#### 4 `Prunning_process.R`
 
-*(Additional documentation to be added.)*
+Apply iterative pruning procedure to remove genes and nuclei in a data matrix
 
 ---
 
 ### 5. Metacell-Based Bayesian Network Construction
+#### 5 `BN_prep.R`
 
-Scripts for Bayesian network inference and causal network generation.
-
-*(Additional documentation to be added.)*
+Generate Bayesian network inference using RIMBANet
 
 ---
 
