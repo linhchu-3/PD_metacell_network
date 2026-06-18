@@ -1,5 +1,5 @@
 #rm(list = ls()) #delete environment
-#Using MEGENA v.1.6 - need to uninstall prev MEGENA and install new one
+#Using MEGENA v.1.6 - installed from https://github.com/songw01/MEGENA/blob/master/MEGENA_1.6.tar.gz
 
 library(Seurat)
 library(SeuratObject)
