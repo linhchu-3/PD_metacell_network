@@ -93,7 +93,7 @@ Identify candidate causal regulators and top disease-associated driver genes, us
 
 ---
 
-## Repository Contents
+## Scripts
 
 ### 1. Metacell Construction
 
@@ -170,6 +170,9 @@ The workflow expects preprocessed snRNA-seq datasets generated using the publish
 | Martirosyan et al. | *Molecular Neurodegeneration* (2024), PMID: 38245794 | GSE243639     |
 | Ma et al.          | *Nature Communications* (2025), PMID: 40759663       | GSE253462     |
 
+Example input files include:
+* Processed snRNAseq data from Wang et al.
+* Processed snRNAseq data from Ma et al.
 
 ---
 
@@ -183,6 +186,10 @@ The workflow generates:
 * Pruned network adjacency matrices
 * Bayesian causal networks
 * Key driver genes
+
+Example output files include: 
+* Metacell data from Wang et al.
+* Metacell data from Ma et al.
 
 ---
 
