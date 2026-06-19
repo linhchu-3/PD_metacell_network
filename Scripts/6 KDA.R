@@ -1,6 +1,8 @@
 ##download KDA package from here: https://github.com/mw201608/mnml-public/blob/master/pkgs/KDA_0.2.2.zip 
 ###install.packages("KDA_0.2.2.tar.gz", repos=NULL, type = "source")
 
+##note run the KDA for L1 (undirected), L2 (undirected), and L3 (directed) then combine them to get the final list
+
 directed <- FALSE ##choose FALSE for L1, L2, and TRUE for L3
 layer <- 2 # choose 1,2, or 3
 minDsCut <- -1
@@ -133,8 +135,8 @@ cluster_KDA_L1_L2_L3_final$FE <- apply(cluster_KDA_L1_L2_L3_final[, c("L1_FE", "
   max(ifelse(is.na(row), 0, row))
 })
 
-cluster_KDA_L1_L2_L3_final$Cell_type <- "OPC"
-cluster_KDA_L1_L2_L3_final <- merge(cluster_KDA_L1_L2_L3_final, result5_padj_0.05, by = "Symbol", all = TRUE)
+cluster_KDA_L1_L2_L3_final$Cell_type <- "Oli"
+cluster_KDA_L1_L2_L3_final <- merge(cluster_KDA_L1_L2_L3_final, result_padj_0.05, by = "Symbol", all = TRUE)
 cluster_KDA_L1_L2_L3_final <- cluster_KDA_L1_L2_L3_final[complete.cases(cluster_KDA_L1_L2_L3_final$maxlog10_network),]
 
 
