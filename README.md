@@ -191,6 +191,8 @@ The workflow generates:
 Example output files include: 
 * Metacell data from Wang et al.
 * Metacell data from Ma et al.
+* Metacell-based MEGENA network from Cluster 1 (Wang et al.)
+* Metacell-based BN network from Cluster 1 (Wang et al.)
 
 ---
 
