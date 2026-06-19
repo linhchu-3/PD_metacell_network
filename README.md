@@ -77,7 +77,8 @@ Identify significant gene-gene correlations while accounting for cell abundance 
 
 ### 4. Metacell-Based MEGENA Analysis
 
-Construct multiscale gene co-expression networks using the MEGENA framework.
+Construct multiscale gene co-expression networks using the MEGENA framework. Read about MEGENA in Song and Zhang (PloS computational biology, 2015, PMID: 26618778). Detailed codes of MEGENA can be found https://github.com/songw01/MEGENA/tree/master/R
+
 
 ### 5. Network Pruning and Filtering
 
@@ -85,11 +86,11 @@ Apply pruning strategies to remove spurious network connections and improve netw
 
 ### 6. Metacell-Based Bayesian Network Construction
 
-Infer causal regulatory relationships among genes.
+Infer causal regulatory relationships among genes. Detailed codes of BN can be found https://github.com/mw201608/BayesianNetwork
 
 ### 7. Key Driver Analysis
 
-Identify candidate causal regulators and top disease-associated driver genes, using the method described in here Zhang et al. (Cell, 2013, PMID: 23622250) or can downloaded here: https://github.com/mw201608/mnml-public/blob/master/pkgs/KDA_0.2.2.tar.gz
+Identify candidate causal regulators and top disease-associated driver genes, using the method described in Zhang et al. (Cell, 2013, PMID: 23622250) or can be downloaded here: https://github.com/mw201608/mnml-public/blob/master/pkgs/KDA_0.2.2.tar.gz
 
 ---
 
