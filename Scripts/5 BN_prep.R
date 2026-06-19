@@ -3,8 +3,8 @@
 #update prior path
 prior_path_new <-  "/TF_target_BN_priors.tsv"
 
-#use example cluster 1
-clusterid = 1
+#use example cluster 0
+clusterid = 0
 
 filtered_expr_data_list <- readRDS(paste0("Cluster", clusterid, "/filtered_expr_data_list.RDS"))
 
