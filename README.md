@@ -134,7 +134,7 @@ Generates the final BMC matrix by adjusting significant correlations using the e
 
 ### 3. Metacell-Based MEGENA Analysis
 
-#### 3.1 `Cluster_sorted.R`
+#### 3.1 `MEGENA.R`
 
 Submits MEGENA jobs using absolute correlation values sorted by magnitude.
 
