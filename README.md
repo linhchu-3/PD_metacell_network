@@ -174,7 +174,6 @@ The workflow expects preprocessed snRNA-seq datasets generated using the publish
 Example input files include:
 * Processed snRNAseq data from Wang et al.
 * Processed snRNAseq data from Ma et al.
-
 ---
 
 ## Output
@@ -199,4 +198,3 @@ Example output files include:
 ---
 
 ## Citation
-The code can also be found at Zenodo (https://zenodo.org/records/20834300).
