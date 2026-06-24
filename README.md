@@ -198,3 +198,6 @@ Example output files include:
 ---
 
 ## Citation
+This repository contains the source code for generating MetaCell-based Multiscale Network Analysis (MCMNA). The code can also be found at Zenodo. Please cite
+
+Chu, L., & ZHANG, B. (2026). MetaCell-based Multiscale Network Analysis (MCMNA). Zenodo. https://doi.org/10.5281/zenodo.20834300
