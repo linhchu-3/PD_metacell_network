@@ -197,4 +197,4 @@ Example output files include:
 ---
 
 ## Citation
-
+The code can also be found at Zenodo (https://zenodo.org/records/20834300).
