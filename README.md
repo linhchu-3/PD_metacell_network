@@ -172,8 +172,8 @@ The workflow expects preprocessed snRNA-seq datasets generated using the publish
 | Ma et al.          | *Nature Communications* (2025), PMID: 40759663       | GSE253462     |
 
 Example input files include:
-* Processed snRNAseq data of cluster 2 Astrocyte from Wang et al.
-* Processed snRNAseq data of cluster 1 Astrocyte from Ma et al.
+* Processed snRNAseq data from Wang et al.
+* Processed snRNAseq data from Ma et al.
 
 ---
 
@@ -189,10 +189,12 @@ The workflow generates:
 * Key driver genes
 
 Example output files include: 
-* Metacell data of cluster 2 Astrocyte from Wang et al.
-* Metacell data of cluster 1 Astrocyte from Ma et al.
-* Metacell-based MEGENA network from Cluster 2 (Wang et al.)
-* Metacell-based BN network from Cluster 2 (Wang et al.)
+* Metacell data from Wang et al.
+* Metacell data from Ma et al.
+* Biologically Meaningful Matric (BMC) from Cluster 0 (Wang et al.) 
+* Metacell-based MEGENA network from Cluster 0 (Wang et al.)
+* Filtered matrix after pruning process from Cluster 0 (Wang et al.)
+* Metacell-based BN network from Cluster 0 (Wang et al.)
 
 ---
 
