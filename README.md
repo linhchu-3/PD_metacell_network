@@ -106,6 +106,11 @@ Corrects covariate effects in the original single-cell dataset prior to metacell
 
 Generates metacells using the **SuperCell** R package within each cell type and condition.
 
+#### 1.2 `DEG.R`
+
+Identify DEGs for each cell cluster
+
+
 ---
 
 ### 2. Biologically Meaningful Correlation (BMC) Matrix Generation
