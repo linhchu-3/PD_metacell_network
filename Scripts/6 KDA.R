@@ -102,7 +102,6 @@ xkdrMatrix <- merge(xkdrMatrix, annotation, by = "Geneid")
 
 cluster_KDA_L1 <- xkdrMatrix_cluster
 cluster_KDA_L1 <- merge(cluster_KDA_L1, result_padj_0.05, by = "Geneid", all = TRUE)
-cluster_KDA_L1$Cell_type <- "OPC"
 cluster_KDA_L1 <- mutate(cluster_KDA_L1, "log10Padj_network" = (-log10(as.numeric(cluster_KDA_L1$pvalue_corrected_subnet))))
 cluster_KDA_L1 <- cluster_KDA_L1[complete.cases(cluster_KDA_L1$log10Padj_network),]
 cluster_KDA_L1 <- merge(cluster_KDA_L1, annotation, by = "Geneid")
