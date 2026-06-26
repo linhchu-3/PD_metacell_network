@@ -3,8 +3,7 @@ library(SeuratObject)
 library(MEGENA)
 library(MAST)
 
-MC_all_clusters_unweighted.seurat <-readRDS("/sc/arion/projects/zhangb03a/Linh/PD/SnRNAseq/PD_Metacells_corrected/Gamma15_avg_PC10_knn5_n2000/MC_all_clusters_gamma15_avg_PC10_knn5_n2000_unweighted.seurat.RDS")
-MC_all_clusters_weighted.seurat <-readRDS("/sc/arion/projects/zhangb03a/Linh/PD/SnRNAseq/PD_Metacells_corrected/Gamma15_avg_PC10_knn5_n2000/MC_all_clusters_gamma15_avg_PC10_knn5_n2000_weighted.seurat.RDS")
+MC_all_clusters_unweighted.seurat <-readRDS("/MC_all_clusters_gamma15_avg_PC10_knn5_n2000_unweighted.seurat.RDS")
 
 logfc.threshold <- log2(1)
 
